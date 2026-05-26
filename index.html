@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Introduction to Cybersecurity: Comprehensive Threat and Awareness Report</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23050505'/><text x='50' y='68' font-family='monospace' font-size='48' font-weight='bold' fill='%2300ff41' text-anchor='middle'>OZI</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+<script>
+
+  /*
+  ==============================================================
+  YOUR PROJECT DETAILS -- EDIT THIS SECTION ONLY
+  ==============================================================
+  Everything you need to fill in is below.
+  The rest of the file builds the page automatically.
+  DO NOT edit anything below the closing comment block.
+  ==============================================================
+  */
+
+  const PROJECT = {
+
+    /*
+    -- BASICS ------------------------------------------------
+    Replace [Your Full Name] with your real name.
+    Replace [Month, Year] with when you completed this.
+    Leave status as "live" since this project is complete.
+    */
+
+    title:    "Introduction to Cybersecurity: Comprehensive Threat and Awareness Report",
+    category: "cybersecurity",
+    status:   "live",
+    author:   "Ozioma Inya",       // REPLACE with your name
+    date:     "June, 2023",          // REPLACE e.g. "January, 2025"
+
+
+    /*
+    -- OVERVIEW ----------------------------------------------
+    One-paragraph summary shown at the top of the page.
+    Leave as-is or rewrite in your own words.
+    */
+
+    overview: "A comprehensive cybersecurity awareness and threat landscape report produced for an organization that wants to understand the threat landscape, protect its data and build a security-aware culture. Completed as part of the Cisco Networking Academy Junior Cybersecurity Analyst career path.",
+
+
+    /*
+    -- OBJECTIVES --------------------------------------------
+    One objective per module. Edit or add as needed.
+    */
+
+    objectives: [
+      "Explain the current cybersecurity landscape and why it is a growing global priority",
+      "Identify and describe the most common cyber attack types, techniques, and threat actors",
+      "Explain how individuals and organisations can protect personal data and online privacy",
+      "Describe how organisations build and maintain a security posture using policies, frameworks, and controls",
+      "Outline cybersecurity career pathways, roles, and relevant certifications",
+    ],
+
+
+    /*
+    -- SKILLS ------------------------------------------------
+    */
+
+    skills: [
+      "Threat Landscape Analysis", "Attack Classification", "Social Engineering Awareness",
+      "Malware Types", "CIA Triad", "Data Protection", "Authentication Methods",
+      "Encryption Fundamentals", "Security Policies", "Incident Response",
+      "Security Frameworks", "Cybersecurity Career Pathways", "Risk Awareness",
+    ],
+
+
+    /*
+    -- PARTS -------------------------------------------------
+    Each part corresponds to one course module.
+    title    = the module topic
+    subtitle = short description of what this part covers
+    content  = the body of the section -- your research and analysis
+    You can expand the content fields with your own findings.
+    */
+
+    parts: [
+      {
+        module:   "PART 01",
+        title:    "The Cybersecurity Landscape",
+        subtitle: "What cybersecurity is, why it matters, and the current state of threats globally",
+        content: [
+          {
+            heading: "What Is Cybersecurity?",
+            body: "Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These attacks typically aim to access, change, or destroy sensitive information, extort money from users, or interrupt normal business operations. As more of the world moves online, the attack surface grows larger and the consequences of a breach grow more severe.",
+          },
+          {
+            heading: "The Scale of the Problem",
+            body: "Cybercrime is now one of the fastest-growing criminal activities globally. The 2021 World Economic Forum Global Risks Report listed cybersecurity failure among the top five global risks alongside extreme weather and infectious diseases. Organisations of every size are targeted, including multinational corporations, small businesses, schools, and hospitals. No sector is immune. The cost of cybercrime globally is projected to reach trillions of dollars annually, accounting for data theft, financial fraud, system downtime, and reputational damage.",
+          },
+          {
+            heading: "Why the Skills Gap Matters",
+            body: "Despite the growing threat, the cybersecurity workforce cannot keep up. Millions of cybersecurity positions worldwide are expected to remain unfilled due to a critical skills gap. This creates both a risk for organisations and an opportunity for professionals entering the field. Governments, academic institutions, and private companies are all investing heavily in cybersecurity training programmes to address this gap.",
+          },
+          {
+            heading: "Current Threat Trends",
+            body: "The modern threat landscape is characterised by several persistent trends: ransomware attacks targeting critical infrastructure, nation-state sponsored espionage, supply chain attacks that compromise trusted software vendors, and the weaponisation of artificial intelligence by threat actors. The shift to remote work has significantly expanded the attack surface, with home networks and personal devices becoming entry points to corporate systems.",
+          },
+        ],
+      },
+      {
+        module:   "PART 02",
+        title:    "Attacks, Concepts and Techniques",
+        subtitle: "How threat actors operate, and the most common attack methods used against individuals and organisations",
+        content: [
+          {
+            heading: "Threat Actors",
+            body: "Not all attackers are the same. Threat actors range from opportunistic script kiddies using pre-built tools, to organised criminal groups running ransomware-as-a-service operations, to state-sponsored advanced persistent threat (APT) groups conducting long-term espionage. Understanding who is attacking and why helps organisations prioritise their defences. Motivations include financial gain, espionage, hacktivism, sabotage, and in some cases simple curiosity.",
+          },
+          {
+            heading: "Malware",
+            body: "Malware, short for malicious software, is one of the most common attack vectors. Key types include: viruses, which attach to legitimate files and spread when those files are executed; worms, which self-replicate across networks without user interaction; trojans, which disguise themselves as legitimate software; ransomware, which encrypts data and demands payment for decryption; spyware, which silently collects information about the user; and adware, which delivers unwanted advertisements and may track browsing activity.",
+          },
+          {
+            heading: "Social Engineering",
+            body: "Social engineering attacks exploit human psychology rather than technical vulnerabilities. Phishing is the most widespread. It involves sending deceptive emails or messages that trick users into revealing credentials or clicking malicious links. Spear phishing targets specific individuals with personalised messages. Vishing (voice phishing) uses phone calls. Pretexting involves creating a fabricated scenario to extract information. Baiting offers something enticing, such as a free download, or a USB drive that delivers malware. The common thread is manipulation: attackers exploit trust, urgency, and fear.",
+          },
+          {
+            heading: "Network Attacks",
+            body: "Denial of Service (DoS) attacks flood a target with traffic to make it unavailable. Distributed DoS (DDoS) attacks amplify this by using a botnet, a network of compromised machines. Man-in-the-Middle (MitM) attacks intercept communications between two parties without their knowledge, often on unsecured public Wi-Fi. Packet sniffing captures network traffic in transit. IP spoofing forges packet headers to impersonate a trusted source. Replay attacks capture and retransmit valid authentication data to gain unauthorised access.",
+          },
+          {
+            heading: "Application Attacks",
+            body: "Web applications are a major attack surface. SQL injection inserts malicious code into input fields to manipulate database queries and extract sensitive data. Cross-site scripting (XSS) injects client-side scripts into web pages viewed by other users. Buffer overflow attacks send more data to a program than it can handle, overwriting adjacent memory. Zero-day exploits target vulnerabilities that the vendor has not yet patched, making them particularly dangerous since no fix exists at the time of the attack.",
+          },
+        ],
+      },
+      {
+        module:   "PART 03",
+        title:    "Protecting Your Data and Privacy",
+        subtitle: "How individuals can protect personal data, secure accounts, and maintain online privacy",
+        content: [
+          {
+            heading: "Understanding Personal Data",
+            body: "Personal data includes anything that can identify an individual, such as name, address, date of birth, financial details, health records, location data, and online behaviour. This data is highly valuable to cybercriminals, advertisers, and nation-states alike. Once exposed, personal data can be used for identity theft, financial fraud, targeted phishing, blackmail, and account takeover. The first step to protection is understanding what data you are generating and who has access to it.",
+          },
+          {
+            heading: "Authentication and Passwords",
+            body: "Weak or reused passwords remain one of the most exploited vulnerabilities. Strong passwords should be long (12+ characters), complex, and unique to each account. Password managers generate and store strong passwords securely. Multi-factor authentication (MFA) adds a second verification step. It could be a code sent to a phone, a biometric scan, or a hardware token that significantly reduces the risk of account compromise even when a password is stolen. MFA should be enabled on every account that supports it.",
+          },
+          {
+            heading: "Encryption",
+            body: "Encryption converts readable data into an unreadable format that can only be reversed with the correct key. It protects data at rest (stored files, databases), in transit (data moving across networks), and in use. HTTPS encrypts web traffic between a browser and a server. End-to-end encryption in messaging apps ensures only the sender and receiver can read messages. Full disk encryption protects data on devices that are lost or stolen. Understanding encryption is fundamental because it is the technical backbone of most data protection measures.",
+          },
+          {
+            heading: "Safe Online Practices",
+            body: "Practical online safety measures include: keeping operating systems and software updated to close known vulnerabilities; using a VPN on public Wi-Fi to encrypt traffic; being cautious with email attachments and links even from known senders; reviewing app permissions on mobile devices; using privacy-focused browsers and search engines; enabling automatic backups to protect against data loss; and regularly reviewing account activity and connected applications for signs of unauthorised access.",
+          },
+          {
+            heading: "Data Backups and Recovery",
+            body: "The 3-2-1 backup rule is a well-established standard: keep at least three copies of data, on two different storage media, with one copy stored offsite or in the cloud. Regular backups are the single most effective defence against ransomware. If your data is backed up securely, a ransomware attack loses most of its leverage. Backups should be tested regularly to confirm they can actually be restored when needed.",
+          },
+        ],
+      },
+      {
+        module:   "PART 04",
+        title:    "Protecting the Organisation",
+        subtitle: "How organisations build a security posture using policies, frameworks, controls, and response plans",
+        content: [
+          {
+            heading: "The CIA Triad",
+            body: "The CIA triad, which stands for Confidentiality, Integrity, and Availability, is the foundational model for information security. Confidentiality ensures data is only accessible to authorised parties. Integrity ensures data is accurate and has not been tampered with. Availability ensures systems and data are accessible when needed by authorised users. Every security control, policy, and decision can be evaluated against these three properties. A ransomware attack violates all three: it denies access (availability), may corrupt data (integrity), and the threat actor gains access to sensitive information (confidentiality).",
+          },
+          {
+            heading: "Security Policies and Frameworks",
+            body: "Organisations use security frameworks to structure their approach to cybersecurity. The NIST Cybersecurity Framework organises security activities into five functions: Identify, Protect, Detect, Respond, and Recover. ISO/IEC 27001 is an international standard for information security management systems. These frameworks provide a common language and a structured approach to managing cybersecurity risk. Security policies such as acceptable use, password management, incident response, data classification translate framework principles into enforceable rules.",
+          },
+          {
+            heading: "Access Control and Least Privilege",
+            body: "Access control limits who can view or use resources. The principle of least privilege states that every user, system, and process should have access only to the resources it needs to perform its function, nothing more. Role-based access control (RBAC) assigns permissions based on job roles rather than individual users. These controls reduce the blast radius of a breach. If an attacker compromises a low-privilege account, they cannot immediately access critical systems.",
+          },
+          {
+            heading: "Security Monitoring and Incident Response",
+            body: "Organisations cannot defend what they cannot see. Security monitoring involves collecting and analysing logs, network traffic, and system events to detect anomalies and potential incidents. A Security Operations Centre (SOC) is a team dedicated to continuous monitoring and response. When an incident is detected, a structured incident response plan guides the organisation through six phases: Preparation, Identification, Containment, Eradication, Recovery, and Lessons Learned. The goal is to minimise damage, restore operations, and prevent recurrence.",
+          },
+          {
+            heading: "Legal and Ethical Responsibilities",
+            body: "Organisations operating in different jurisdictions face legal obligations around data protection and breach notification. The EU's General Data Protection Regulation (GDPR) requires organisations to report data breaches within 72 hours and gives individuals rights over their personal data. The Computer Fraud and Abuse Act (CFAA) in the United States criminalises unauthorised access to computer systems. Cybersecurity professionals must operate within legal and ethical boundaries. This includes obtaining proper authorisation before testing, respecting privacy, and reporting findings responsibly.",
+          },
+        ],
+      },
+      {
+        module:   "PART 05",
+        title:    "Will Your Future Be in Cybersecurity?",
+        subtitle: "Cybersecurity career pathways, key roles, certifications, and how to get started",
+        content: [
+          {
+            heading: "The Opportunity",
+            body: "Cybersecurity is one of the fastest-growing career fields in technology. With millions of unfilled positions globally, skilled professionals are in high demand across every industry, including finance, healthcare, government, retail, and critical infrastructure. Entry-level roles are accessible with foundational certifications and a portfolio of practical skills. The field rewards continuous learning. As threats evolve, so do the skills required, making cybersecurity a career with long-term relevance and growth potential.",
+          },
+          {
+            heading: "Key Career Roles",
+            body: "Entry-level roles include Cybersecurity Analyst (monitoring alerts and investigating incidents), Security Operations Centre (SOC) Analyst Tier 1 (triage and escalation), and IT Support Specialist with a security focus. Mid-level roles include Penetration Tester, Incident Responder, Security Engineer, and Threat Intelligence Analyst. Senior roles include Security Architect, Chief Information Security Officer (CISO), and Red Team Lead. Most professionals specialise over time in either offensive security (ethical hacking, penetration testing) or defensive security (SOC, threat hunting, forensics).",
+          },
+          {
+            heading: "Certifications and Learning Pathways",
+            body: "Entry-level certifications include CompTIA Security+, Cisco CCST Cybersecurity, and (ISC)2 CC (Certified in Cybersecurity). Intermediate certifications include CompTIA CySA+, Cisco CyberOps Associate, and CEH (Certified Ethical Hacker). Advanced certifications include OSCP (Offensive Security Certified Professional), CISSP (Certified Information Systems Security Professional), and Cisco CyberOps Professional. The Cisco Junior Cybersecurity Analyst career path provides direct preparation for the CCST Cybersecurity certification and entry-level roles.",
+          },
+          {
+            heading: "Building a Portfolio",
+            body: "Certifications demonstrate knowledge, but a portfolio demonstrates ability. Practical skills can be developed through home labs (virtual machines, Packet Tracer, GNS3), Capture the Flag (CTF) competitions, TryHackMe and Hack The Box platforms, open source contributions, and documented project work. Uploading projects to GitHub, writing technical write-ups, and maintaining a professional LinkedIn presence are all effective ways to demonstrate skills to employers. This project is part of that portfolio.",
+          },
+        ],
+      },
+    ],
+
+
+    /*
+    -- REFLECTIONS ------------------------------------------
+    Your personal reflections on completing this course.
+    Rewrite in your own words -- this is the most personal section.
+    */
+
+    reflections: [
+      {
+        title: "Cybersecurity is everyone's responsibility",
+        text:  "Cybersecurity is not just an IT problem. Social engineering attacks target people, not systems. The weakest link in any organisation's security posture is usually a human one. Understanding how attackers exploit psychology using urgency, trust, and fear is just as important as understanding technical vulnerabilities.",
+      },
+      {
+        title: "The threat landscape is constantly evolving",
+        text:  "The threat environment rapidly changes. Attack techniques that were cutting-edge five years ago are now automated and accessible to low-skill attackers. Staying current is not optional in this field because it is a core part of the job.",
+      },
+      {
+        title: "Frameworks give structure to what feels overwhelming",
+        text:  "The NIST Cybersecurity Framework and the CIA triad are very practically useful concepts. They provide a structured way to think about any security problem; what needs to be protected, from whom, and how. These frameworks appear consistently across the industry.",
+      },
+      {
+        title: "This is the foundation everything else builds on",
+        text:  "Introduction to Cybersecurity is deliberately conceptual because it provides the vocabulary and mental models for everything that follows. Subsequently, all other things build directly on the threat awareness and security principles covered here.",
+      },
+    ],
+
+
+    /*
+    -- LINKS -----------------------------------------------
+    Fill these in once your project is on GitHub.
+    Leave as "" to hide the button until ready.
+    */
+
+    githubLink:     "https://github.com/oziomainya/intro-to-cybersecurity",   // REPLACE with GitHub repo URL when ready
+    portfolioLink:  "https://oziomainya.github.io",   // REPLACE with portfolio URL when ready
+    authorLinkedIn: "https://linkedin.com/in/ozioma-inya-a46327304",   // REPLACE with LinkedIn URL when ready
+
+  };
+
+  /*
+  ==============================================================
+  DO NOT EDIT BELOW THIS COMMENT BLOCK
+  ==============================================================
+  */
+
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#050505;--bg-2:#0c0c0c;--bg-card:#0f0f0f;--bg-code:#080808;
+  --green:#00ff41;--green-d:#00b32d;--green-dk:#001f08;
+  --cyan:#00e5ff;--cyan-d:#00a8c0;
+  --amber:#ffd600;--red:#ff4444;--text:#ccffcc;
+  --text-2:#5a8f5a;--text-m:#2a4a2a;
+  --border:rgba(0,255,65,.09);--border-s:rgba(0,255,65,.22);
+  --font:'JetBrains Mono','Courier New',monospace
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:14px;line-height:1.7;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,255,65,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,65,.02) 1px,transparent 1px);background-size:44px 44px;pointer-events:none;z-index:0}
+body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.1) 2px,rgba(0,0,0,.1) 4px);pointer-events:none;z-index:999}
+nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(5,5,5,.97);border-bottom:1px solid var(--border);padding:0 2.5rem;height:56px;display:flex;align-items:center;justify-content:space-between}
+.nav-back{color:var(--text-2);text-decoration:none;font-size:11px;letter-spacing:.1em;transition:color .2s}
+.nav-back::before{content:'<- ';color:var(--text-m)}
+.nav-back:hover{color:var(--green)}
+.nav-id{color:var(--text-m);font-size:11px;letter-spacing:.1em}
+main{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:6rem 2.5rem 5rem}
+.proj-header{margin-bottom:4rem;padding-bottom:2.5rem;border-bottom:1px solid var(--border)}
+.proj-meta{display:flex;align-items:center;gap:.65rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.meta-cat{font-size:9px;letter-spacing:.15em;padding:3px 10px;border-radius:2px;background:rgba(0,229,255,.06);color:var(--cyan-d);border:1px solid rgba(0,229,255,.2)}
+.meta-status{font-size:9px;letter-spacing:.12em;display:inline-flex;align-items:center;gap:5px}
+.meta-status::before{content:'';width:6px;height:6px;border-radius:50%;animation:pulse 2s ease-in-out infinite}
+.meta-status.live{color:var(--green)}.meta-status.live::before{background:var(--green)}
+.meta-status.wip{color:var(--cyan)}.meta-status.wip::before{background:var(--cyan)}
+.meta-status.soon{color:var(--amber)}.meta-status.soon::before{background:var(--amber)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+.meta-source{font-size:9px;letter-spacing:.08em;padding:3px 10px;border-radius:2px;background:rgba(0,229,255,.05);color:var(--cyan-d);border:1px solid rgba(0,229,255,.15)}
+.meta-date{font-size:10px;color:var(--text-m)}
+.proj-title{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:700;color:var(--green);letter-spacing:-.02em;margin-bottom:1rem;line-height:1.2}
+.proj-overview{font-size:13px;color:var(--text-2);line-height:2;max-width:640px}
+.proj-actions{display:flex;gap:.75rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.55rem 1.2rem;font-family:var(--font);font-size:11px;letter-spacing:.1em;cursor:pointer;transition:all .18s;text-decoration:none;border-radius:2px}
+.btn-p{background:var(--green-dk);color:var(--green);border:1px solid rgba(0,255,65,.3)}
+.btn-p:hover{background:var(--green);color:#030d06}
+.btn-s{background:transparent;color:var(--text-2);border:1px solid var(--border-s)}
+.btn-s:hover{color:var(--cyan);border-color:rgba(0,229,255,.3)}
+.section{margin-bottom:3.5rem}
+.sh{display:flex;align-items:center;gap:1rem;margin-bottom:1.75rem;color:var(--text-2);font-size:12px;letter-spacing:.1em}
+.sh::before{content:'$';color:var(--green);font-size:14px;font-weight:700}
+.sh::after{content:'';flex:1;height:1px;background:var(--border)}
+.obj-list{display:flex;flex-direction:column;gap:.6rem}
+.obj-item{display:flex;align-items:flex-start;gap:.75rem;background:var(--bg-card);border:1px solid var(--border);border-radius:3px;padding:.85rem 1.1rem;font-size:12px;color:var(--text-2);transition:border-color .2s}
+.obj-item:hover{border-color:var(--border-s)}
+.obj-num{color:var(--text-m);flex-shrink:0;min-width:22px}
+.tags-wrap{display:flex;flex-wrap:wrap;gap:.4rem}
+.tag{display:inline-block;padding:3px 10px;font-size:10px;border-radius:2px;letter-spacing:.04em;background:rgba(0,229,255,.05);color:var(--cyan-d);border:1px solid rgba(0,229,255,.14)}
+.part{background:var(--bg-card);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-bottom:1.5rem;transition:border-color .2s}
+.part:hover{border-color:var(--border-s)}
+.part-header{padding:1.25rem 1.5rem;border-bottom:1px solid var(--border)}
+.part-module{font-size:9px;color:var(--text-m);letter-spacing:.15em;margin-bottom:.4rem}
+.part-title{font-size:14px;font-weight:700;color:var(--green);margin-bottom:.25rem}
+.part-subtitle{font-size:11px;color:var(--text-2)}
+.part-body{padding:1.5rem}
+.content-block{margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.content-block:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+.content-heading{font-size:11px;font-weight:700;color:var(--cyan);letter-spacing:.08em;margin-bottom:.6rem}
+.content-body{font-size:12px;color:var(--text-2);line-height:2}
+.reflections-list{display:flex;flex-direction:column;gap:1rem}
+.reflection{background:var(--bg-card);border:1px solid var(--border);border-radius:4px;padding:1.25rem;transition:border-color .2s}
+.reflection:hover{border-color:var(--border-s)}
+.reflection-n{font-size:9px;color:var(--text-m);letter-spacing:.15em;margin-bottom:.35rem}
+.reflection-title{font-size:12px;font-weight:700;color:var(--text);margin-bottom:.4rem}
+.reflection-text{font-size:12px;color:var(--text-2);line-height:1.9}
+footer{position:relative;z-index:1;text-align:center;padding:2rem;border-top:1px solid var(--border);color:var(--text-m);font-size:10px;letter-spacing:.1em}
+@media(max-width:620px){main{padding:5rem 1.25rem 3rem}nav{padding:0 1.25rem}.proj-title{font-size:1.5rem}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a id="nav-back" href="#" class="nav-back">Back to Portfolio</a>
+  <span class="nav-id" id="nav-id"></span>
+</nav>
+
+<main>
+  <header class="proj-header" id="proj-header"></header>
+
+  <div class="section">
+    <div class="sh">cat objectives.txt</div>
+    <div class="obj-list" id="obj-list"></div>
+  </div>
+
+  <div class="section">
+    <div class="sh">cat skills.txt</div>
+    <div class="tags-wrap" id="tags-wrap"></div>
+  </div>
+
+  <div class="section">
+    <div class="sh">cat report.txt</div>
+    <div id="parts-list"></div>
+  </div>
+
+  <div class="section">
+    <div class="sh">cat reflections.txt</div>
+    <div class="reflections-list" id="reflections-list"></div>
+  </div>
+
+</main>
+
+<footer id="footer"></footer>
+
+<script>
+var sl = { soon:'COMING SOON', wip:'IN PROGRESS', live:'LIVE' };
+
+if(PROJECT.portfolioLink) document.getElementById('nav-back').href = PROJECT.portfolioLink;
+document.getElementById('nav-id').textContent = 'INTRO TO CYBERSECURITY -- COMPREHENSIVE REPORT';
+
+var gh  = PROJECT.githubLink    ? '<a href="' + PROJECT.githubLink + '" target="_blank" class="btn btn-p">View on GitHub</a>' : '';
+var pfl = PROJECT.portfolioLink ? '<a href="' + PROJECT.portfolioLink + '" class="btn btn-s">Back to Portfolio</a>' : '';
+document.getElementById('proj-header').innerHTML =
+  '<div class="proj-meta">' +
+    '<span class="meta-cat">CYBERSECURITY</span>' +
+    '<span class="meta-status ' + PROJECT.status + '">' + (sl[PROJECT.status] || PROJECT.status.toUpperCase()) + '</span>' +
+    '<span class="meta-source">CISCO INTRODUCTION TO CYBERSECURITY · JUNIOR CYBERSECURITY ANALYST PATH</span>' +
+    '<span class="meta-date">' + PROJECT.date + ' by ' + PROJECT.author + '</span>' +
+  '</div>' +
+  '<h1 class="proj-title">' + PROJECT.title + '</h1>' +
+  '<p class="proj-overview">' + PROJECT.overview + '</p>' +
+  ((gh || pfl) ? '<div class="proj-actions">' + gh + pfl + '</div>' : '');
+
+var ol = document.getElementById('obj-list');
+PROJECT.objectives.forEach(function(o, i) {
+  ol.innerHTML += '<div class="obj-item"><span class="obj-num">' + String(i+1).padStart(2,'0') + '.</span><span>' + o + '</span></div>';
+});
+
+var tw = document.getElementById('tags-wrap');
+PROJECT.skills.forEach(function(s) {
+  tw.innerHTML += '<span class="tag">' + s + '</span>';
+});
+
+var pl = document.getElementById('parts-list');
+PROJECT.parts.forEach(function(p) {
+  var blocks = p.content.map(function(c) {
+    return '<div class="content-block"><div class="content-heading">' + c.heading + '</div><div class="content-body">' + c.body + '</div></div>';
+  }).join('');
+  pl.innerHTML +=
+    '<div class="part">' +
+      '<div class="part-header">' +
+        '<div class="part-module">' + p.module + '</div>' +
+        '<div class="part-title">' + p.title + '</div>' +
+        '<div class="part-subtitle">' + p.subtitle + '</div>' +
+      '</div>' +
+      '<div class="part-body">' + blocks + '</div>' +
+    '</div>';
+});
+
+var rl = document.getElementById('reflections-list');
+PROJECT.reflections.forEach(function(r, i) {
+  rl.innerHTML +=
+    '<div class="reflection">' +
+      '<div class="reflection-n">REFLECTION ' + String(i+1).padStart(2,'0') + '</div>' +
+      '<div class="reflection-title">' + r.title + '</div>' +
+      '<div class="reflection-text">' + r.text + '</div>' +
+    '</div>';
+});
+
+var lnk = PROJECT.authorLinkedIn
+  ? '<a href="' + PROJECT.authorLinkedIn + '" style="color:var(--green-d);text-decoration:none">' + PROJECT.author + '</a>'
+  : PROJECT.author;
+document.getElementById('footer').innerHTML =
+  '<p>' + lnk + ' &nbsp;.&nbsp; CYBERSECURITY PROJECT &nbsp;.&nbsp; CISCO INTRODUCTION TO CYBERSECURITY &nbsp;.&nbsp; <span style="color:var(--green)">LIVE</span></p>';
+</script>
+</body>
+</html>

@@ -186,18 +186,22 @@ This project is part of that portfolio.
 ## Reflections
 
 **1. Cybersecurity is everyone's responsibility**
+
 Social engineering attacks target people, not systems. Understanding how
 attackers exploit psychology is just as important as technical knowledge.
 
 **2. The threat landscape is constantly evolving**
+
 Attack techniques that were cutting-edge five years ago are now automated
 and accessible to low-skill attackers. Staying current is a core part of the job.
 
 **3. Frameworks give structure to what feels overwhelming**
+
 The NIST Cybersecurity Framework and the CIA triad provide a structured way
 to think about any security problem. They appear consistently across the industry.
 
 **4. This is the foundation everything else builds on**
+
 Introduction to Cybersecurity provides the vocabulary and mental models for
 everything that follows in the career path.
 

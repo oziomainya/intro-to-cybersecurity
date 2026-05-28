@@ -1,9 +1,13 @@
 # Introduction to Cybersecurity: Comprehensive Threat and Awareness Report
 
 > **Category:** Cybersecurity
+> 
 > **Status:** Live
+> 
 > **Course:** Cisco Introduction to Cybersecurity · Junior Cybersecurity Analyst Career Path
+> 
 > **Author:** Ozioma Inya         <!-- REPLACE with your name -->
+> 
 > **Date:** June, 2023              <!-- REPLACE e.g. "January, 2025" -->
 
 ---
